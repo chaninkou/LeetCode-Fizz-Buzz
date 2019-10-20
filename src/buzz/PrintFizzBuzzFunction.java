@@ -5,22 +5,23 @@ import java.util.List;
 
 public class PrintFizzBuzzFunction {
     public List<String> fizzBuzz(int n) {
-        // Making a list
-        List<String> list = new ArrayList<>();
-        
-        for(int i = 1; i <= n; i++){
-            // If multiples of three or five
-            if(i % 15 == 0){
-                list.add("FizzBuzz");
-            } else if (i % 3 == 0){ // Multiples of three
-                list.add("Fizz");
-            } else if (i % 5 == 0){ // Multiples of five
-                list.add("Buzz");
-            } else {
-                list.add(String.valueOf(i));
-            }
-        }
-        
-        return list;
+        // Make a list of string
+    	List<String> result = new ArrayList<>();
+    	
+    	// O(n) no matter what
+    	for(int i = 1; i <= n; i++){
+    		// If its divided by 3 or 5, means divided by 15
+    		if(i % 15 == 0){
+    			result.add("FizzBuzz");
+    		} else if (i % 3 == 0){
+    			result.add("Fizz");
+    		} else if (i % 5 == 0){
+    			result.add("Buzz");
+    		} else {
+    			result.add(String.valueOf(i));
+    		}
+    	}
+    	
+    	return result;
     }
 }
