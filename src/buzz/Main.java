@@ -8,6 +8,6 @@ public class Main {
 		
 		PrintFizzBuzzFunction solution = new PrintFizzBuzzFunction();
 		
-		System.out.println("Solution: " + solution.fizzBuzz(n));
+		System.out.println("Solution: " + solution.fizzBuzz2(n));
 	}
 }
