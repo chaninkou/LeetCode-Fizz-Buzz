@@ -1,4 +1,4 @@
-package buzz;
+package leetcode412;
 
 import java.util.ArrayList;
 import java.util.List;
